@@ -35,18 +35,26 @@ Using Excel, this portfolio demonstrates how to create an interactive Data Scien
 
 # Screenshot During Analysis 
 ## Sal by Role type 
-![Image]()
+![Image](https://github.com/user-attachments/assets/e3b27d2e-6516-435d-b56e-9d8b3b328461)
 ## Sal by Size 
-![Image]()
+![Image](https://github.com/user-attachments/assets/1676ac10-9426-42a1-881e-00b67943006e)
+
 ## Sal by State
-![Image]()
+![Image](https://github.com/user-attachments/assets/0d25324c-90d7-48c4-b8e6-9a7534193f1e)
 ## Sector by Size
-![Image]()
+![Image](https://github.com/user-attachments/assets/36dddd05-c35e-4701-a381-2164b962151e)
+
 ## Sal by Sector
-![Image]()
+![Image](https://github.com/user-attachments/assets/37fa4ab8-fd53-4790-90cd-e9daaa058bbc)
+
 ## Dashboard
-![Image]()
+![Image](https://github.com/user-attachments/assets/8da62168-4050-427f-a114-2d94d5f3feb5)
+
+![Image](https://github.com/user-attachments/assets/97d289e3-d02f-482b-a039-4f6de129b27c)
+
+![Image](https://github.com/user-attachments/assets/abcb25aa-b54f-4f1b-9cd8-73205bf842b1)
+
 ## Map 
-![Image]()
+![Image](https://github.com/user-attachments/assets/410b2ac2-3b04-40dc-9cc0-2898b95407c1)
 
 
