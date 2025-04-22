@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roanne's EDM Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0d0d0d, #8a2be2);
+      color: #fff;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+      background-color: rgba(0, 0, 0, 0.7);
+      box-shadow: 0 4px 12px #ff69b4;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff;
+      color: #ffb6c1;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+      color: #ffccff;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #ffb6c1;
+      margin: 20px auto;
+      display: block;
+      object-fit: cover;
+      box-shadow: 0 0 15px #ff66cc;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin: 2rem 0 1rem;
+      color: #ffccff;
+      text-align: center;
+      text-shadow: 0 0 5px #ff99ff;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.6);
+      border: 2px solid #ff69b4;
+      border-radius: 15px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 15px #ff1493;
+    }
+
+    .card p, .card a {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #ffe6f0;
+    }
+
+    .card a {
+      display: inline-block;
+      margin: 0.4rem 0;
+      color: #ffb6c1;
+      text-decoration: none;
+      border-bottom: 1px dashed #fff;
+      transition: 0.3s;
+    }
+
+    .card a:hover {
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: #1a1a1a;
+      color: #ffb6c1;
+      box-shadow: 0 -4px 12px #da70d6;
+    }
+
+    /* Glitter animation */
+    .glitter {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background-image: url('https://i.pinimg.com/originals/0f/38/17/0f3817da1af829075774018b36ebb587.gif');
+      background-repeat: repeat;
+      opacity: 0.08;
+      z-index: 0;
+    }
+
+    /* Floating hearts */
+    .heart {
+      position: fixed;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      transform: rotate(45deg);
+      animation: float 10s infinite;
+      opacity: 0.7;
+      z-index: 0;
+    }
+
+    .heart::before, .heart::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) rotate(0deg);
+      }
+      100% {
+        transform: translateY(-100vh) rotate(360deg);
+      }
+    }
+
+    /* Ensuring images autofit */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glitter"></div>
+
+  <!-- Floating Hearts -->
+  <script>
+    for (let i = 0; i < 20; i++) {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.style.left = `${Math.random() * 100}%`;
+      heart.style.animationDuration = `${5 + Math.random() * 10}s`;
+      document.body.appendChild(heart);
+    }
+  </script>
+
+  <header>
+    <h1>🌸 Midterm Lab Task 3 - Data Science Salary & Job Trends Dashboard 🌸</h1>
+    <p>🌷Shining through code and creativity🌷 </p>
+  </header>
+
+  <section>
+    <h2>Portfolio Overview</h2>
+    <div class="card">
+      <p>Using Excel, this portfolio demonstrates how to create an interactive Data Science Salary & Job Trends Dashboard. Through the use of pivot tables, charts, slicers, and an optional map for visualization, it examines employment trends by industry, pays by role, and firm size.</p>
+    </div>
+
+    <h2>Step by Step Process</h2>
+    <div class="card">
+      <h2>Step 1: Use the given data</h2>
+    <ul>
+        <li>Open the Worksheet on Uncleaned DS Jobs and the Transform Tables:</li>
+        <ul>
+            <li>Sal By Role</li>
+            <li>Sal By State</li>
+            <li>Sal By Size</li>
+        </ul>
+    </ul>
+
+    <h2>Step 2: Design the dashboard to highlight the following</h2>
+    <ul>
+        <li>State with the most Data Science jobs</li>
+        <li>Job role with the highest average salary</li>
+        <li>Company size that pays the highest salary</li>
+        <li>Sector with the lowest & highest number of Data Science jobs</li>
+        <li>Sector with the minimum & maximum average salary</li>
+    </ul>
+
+    <h2>Step 3: Create a pivot table</h2>
+    <p>Use pivot tables to summarize data for sector jobs and salary (d & e)</p>
+
+    <h2>Step 4: Generate charts for reports</h2>
+    <p>Use bar, column, or pie charts to visualize salary trends and job distribution</p>
+
+    <h2>Step 5: Insert slicers for filtering</h2>
+    <p>Add slicers for role type, company size, and state to make the dashboard interactive</p>
+
+    <h2>Step 6: Add a map (optional)</h2>
+    <p>If available in your Excel version, insert a map visualization to show job distribution by state</p>
+
+    <h2>Step 7: Apply design & formatting</h2>
+    <p>Customize the colors, fonts, and layout to make the dashboard visually appealing</p>
+
+    <h2>Step 8: Complete the dashboard</h2>
+    <p>Ensure all required visuals and reports are included. The slicers should be functional and interactive</p>
+
+    <h2>Screenshots During Analysis</h2>
+    <h3>Sal by Role type</h3>
+    <img src="https://github.com/user-attachments/assets/e3b27d2e-6516-435d-b56e-9d8b3b328461" alt="Sal by Role type">
+    
+    <h3>Sal by Size</h3>
+    <img src="https://github.com/user-attachments/assets/1676ac10-9426-42a1-881e-00b67943006e" alt="Sal by Size">
+    
+    <h3>Sal by State</h3>
+    <img src="https://github.com/user-attachments/assets/0d25324c-90d7-48c4-b8e6-9a7534193f1e" alt="Sal by State">
+    
+    <h3>Sector by Size</h3>
+    <img src="https://github.com/user-attachments/assets/36dddd05-c35e-4701-a381-2164b962151e" alt="Sector by Size">
+    
+    <h3>Sal by Sector</h3>
+    <img src="https://github.com/user-attachments/assets/37fa4ab8-fd53-4790-90cd-e9daaa058bbc" alt="Sal by Sector">
+
+    <h3>Dashboard</h3>
+    <img src="https://github.com/user-attachments/assets/8da62168-4050-427f-a114-2d94d5f3feb5" alt="Dashboard">
+
+    <h3>Map</h3>
+    <img src="https://github.com/user-attachments/assets/410b2ac2-3b04-40dc-9cc0-2898b95407c1" alt="Map">
+</body>
+</html>
+    </div>
+  </section>
+
+  <footer>
+    🎀Stay Fierce, Stay Fabulous, and keep coding🎀
+  </footer>
+
+</body>
+</html>
